@@ -19,6 +19,7 @@
         <module>ban-duplicate-dependencies-example</module>
         <module>same-dependency-version-example</module>
         <module>dependency-convergence-example</module>
+        <module>ban-dependencies-example</module>
     </modules>
 
     <properties>
