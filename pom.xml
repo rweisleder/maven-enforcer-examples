@@ -16,6 +16,7 @@
         <module>file-example</module>
         <module>custom-rule-example</module>
         <module>ban-transitive-dependencies-example</module>
+        <module>ban-duplicate-dependencies-example</module>
     </modules>
 
     <properties>
