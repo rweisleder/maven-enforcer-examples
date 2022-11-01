@@ -18,6 +18,7 @@
         <module>ban-transitive-dependencies-example</module>
         <module>ban-duplicate-dependencies-example</module>
         <module>same-dependency-version-example</module>
+        <module>dependency-convergence-example</module>
     </modules>
 
     <properties>
