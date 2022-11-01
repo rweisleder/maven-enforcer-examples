@@ -11,6 +11,7 @@
     <modules>
         <module>fail-always-example</module>
         <module>maven-version-example</module>
+        <module>java-version-example</module>
     </modules>
 
     <properties>
