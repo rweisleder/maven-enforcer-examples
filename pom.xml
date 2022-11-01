@@ -13,6 +13,7 @@
         <module>maven-version-example</module>
         <module>java-version-example</module>
         <module>environment-variable-example</module>
+        <module>file-example</module>
     </modules>
 
     <properties>
