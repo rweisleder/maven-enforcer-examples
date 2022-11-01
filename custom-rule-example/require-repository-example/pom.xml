@@ -6,9 +6,11 @@
         <groupId>de.rweisleder.talks</groupId>
         <artifactId>maven-enforcer-examples</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>environment-variable-example</artifactId>
+    <artifactId>require-repository-example</artifactId>
+
     <build>
         <plugins>
             <plugin>
@@ -23,16 +25,19 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <requireEnvironmentVariable>
-                                    <variableName>DEPLOY_USER</variableName>
-                                </requireEnvironmentVariable>
-                                <requireEnvironmentVariable>
-                                    <variableName>DEPLOY_USER_PASSWORD</variableName>
-                                </requireEnvironmentVariable>
+                                <requireRepositoryRule
+                                        implementation="de.rweisleder.example.enforcer.RequireRepositoryRule"/>
                             </rules>
                         </configuration>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>de.rweisleder.talks</groupId>
+                        <artifactId>require-repository-rule</artifactId>
+                        <version>1.0-SNAPSHOT</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

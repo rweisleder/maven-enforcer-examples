@@ -14,10 +14,12 @@
         <module>java-version-example</module>
         <module>environment-variable-example</module>
         <module>file-example</module>
+        <module>custom-rule-example</module>
     </modules>
 
     <properties>
-        <maven-enforcer-plugin.version>3.1.0</maven-enforcer-plugin.version>
+        <maven.version>3.8.6</maven.version>
+        <maven-enforcer.version>3.1.0</maven-enforcer.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
